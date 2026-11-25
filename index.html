@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞行汽车全方位安全分析</title>
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0;}
+        body{max-width:1050px;margin:0 auto;padding:24px;font-family:"Microsoft Yahei",sans-serif;line-height:1.8;color:#222;background:#f7f9fc;}
+        .container{background:#fff;padding:32px;border-radius:12px;box-shadow:0 2px 12px #00000015;}
+        h1{text-align:center;color:#1a4b94;margin-bottom:30px;font-size:26px;}
+        h2{border-left:5px solid #2b7bcc;padding-left:12px;margin:28px 0 14px;font-size:20px;color:#1a4b94;}
+        p{margin-bottom:12px;text-indent:2em;}
+        ul{margin:10px 0 12px 2em;}
+        li{margin-bottom:8px;}
+        .footer{margin-top:40px;text-align:center;color:#777;font-size:14px;padding-top:16px;border-top:1px solid #eee;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>飞行汽车（eVTOL）全方位安全分析</h1>
+
+        <h2>一、研究对象说明</h2>
+        <p>本次分析对象为电动垂直起降飞行器eVTOL（飞行汽车），属于低空载人飞行器，结合航空、汽车、自动驾驶多领域技术，面向城市低空出行场景。从系统安全工程角度，开展失效风险、危险源、防护、适航、应急等维度深度安全分析。</p >
+
+        <h2>二、危险源识别</h2>
+        <ul>
+            <li>动力系统：电池热失控、动力电机失效、配电故障；</li>
+            <li>旋翼系统：旋翼断裂、桨叶撞击、旋翼卡滞；</li>
+            <li>飞控自动驾驶：传感器失效、定位丢失、算法决策错误、信号干扰；</li>
+            <li>环境风险：强风、雷雨、低能见度、鸟类撞击；</li>
+            <li>地面与起降风险：起降点拥挤、坠机、地面人员伤害；</li>
+            <li>人为因素：驾驶员操作失误、乘客误触碰。</li>
+        </ul>
+
+        <h2>三、典型失效模式与风险评估</h2>
+        <p>采用系统安全FMEA思路评估：电池热失控属于高严重度风险，一旦发生极易引发起火爆炸；多旋翼构型依靠多动力冗余降低单点失效风险，但连续多个动力失效依然会造成坠机。GNSS信号遮挡、电磁干扰容易造成定位失效，属于高频诱因风险。</p >
+
+        <h2>四、安全设计措施</h2>
+        <p>1. 冗余设计：多旋翼分布式动力、多套独立飞控、多源传感器（激光雷达+视觉+惯导）；</p >
+        <p>2. 电池安全：隔热隔离、热失控抑制、电池包泄压、BMS实时监控；</p >
+        <p>3. 应急方案：故障下优先迫降，部分机型配备整机降落伞；</p >
+        <p>4. 空域管控：低空航线规划、隔离空域、自动避障；</p >
+        <p>5. 适航约束：遵循民航适航规范，开展大量故障模拟、耐久、环境试验。</p >
+
+        <h2>五、现存安全短板</h2>
+        <p>城市建筑密集，障碍物多，低空环境复杂；城市电磁环境复杂，容易干扰导航通信；事故后应急救援体系不完善；公众接受度低，安全监管体系还在建设阶段。</p >
+
+        <h2>六、安全发展方向</h2>
+        <p>持续完善适航标准，强化全生命周期安全验证；提升机载故障诊断与自主应急降落能力；建设低空智联网、空域调度系统；优化电池热防护与轻量化耐冲击结构，降低事故伤害程度。</p >
+
+        <div class="footer">
+            课程作业：飞行汽车技术基础｜系统安全工程分析
+        </div>
+    </div>
+</body>
+</html>
